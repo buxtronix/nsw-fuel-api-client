@@ -66,7 +66,7 @@ class Station(object):
             brand=data['brand'],
             code=int(data['code']),
             name=data['name'],
-            address=data['address']
+            address=data['address'],
             latitude=data['location']['latitude'],
             longitude=data['location']['longitude'],
         )
