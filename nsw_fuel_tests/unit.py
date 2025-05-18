@@ -149,6 +149,8 @@ class FuelCheckClientTest(unittest.TestCase):
         )
         self.assertEqual(len(result), 3)
         self.assertEqual(result[0].station.code, 678)
+        self.assertAlmostEqual(result[0].station.latitude, -33.987)
+        self.assertAlmostEqual(result[0].station.longitude, 151.334)
         self.assertEqual(result[0].price.price, 150.9)
 
     @Mocker()
